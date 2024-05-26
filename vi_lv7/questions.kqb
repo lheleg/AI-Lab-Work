@@ -1,0 +1,17 @@
+pada_kisa($ans)
+    Da li pada kisa?
+    ---
+    $ans = yn
+
+puse_vjetar($ans)
+    Da li je vjetrovito?
+    ---
+    $ans = yn
+
+vani_je($situacija)
+    Sta se trenutno vani desava? 
+    ---
+    $situacija = select_1
+    1: poplava
+    2: pandemija
+    3: nista

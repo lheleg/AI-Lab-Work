@@ -1,0 +1,36 @@
+za_kabanicu
+    use treba_ponijeti(kabanicu)
+    when 
+        questions.pada_kisa(True)
+        questions.puse_vjetar(True)
+
+za_kisobran
+    use treba_ponijeti(kisobran)
+    when
+        questions.pada_kisa(True)
+        questions.puse_vjetar(False)
+
+nista
+    use treba_ponijeti(nista) 
+    when
+        questions.pada_kisa(False)
+        questions.puse_vjetar(False)
+
+za_gumene_cizme
+    use treba_ponijeti_jos(cizme)
+    when
+        questions.vani_je($situacija)
+        check $situacija == 1
+
+za_masku
+    use treba_ponijeti_jos(masku)
+    when
+        questions.vani_je($situacija)
+        check $situacija == 2
+
+za_nista
+    use treba_ponijeti_jos(nista)
+    when
+        questions.vani_je($situacija)
+        check $situacija == 3
+
